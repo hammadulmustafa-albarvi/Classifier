@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle 
-model = pickle.load(open("spam_predition.pkl", "rb"))
+model = pickle.load(open("spam_prediction.pkl", "rb"))
 vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 st.header("Applications of Naive Bayes ")
 st.title("Spam Classifier")
@@ -26,5 +26,6 @@ if sentiment:
     else:
 
         st.write("Negative")
+
 
 
